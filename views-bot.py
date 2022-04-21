@@ -41,7 +41,7 @@ def getViews():
 if __name__ == '__main__':
     main()
 
-videoURL = input("\nInsert Tiktok Video URL : ")
+videoURL = input("\nInsert Tiktok Video URL : https://www.tiktok.com/@clan.noxy/video/7089151835520388398?is_from_webapp=1&sender_device=pc&web_id=7063650661338351109 ")
 PATH = os.getcwd() + "/chromedriver.exe" 
 driver=webdriver.Chrome(PATH)
 driver.get("https://freer.es/")
