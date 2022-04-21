@@ -11,7 +11,7 @@ def main():
 ---------- TikTok Views Bot ----------'''  + Fore.RED +
  "\n\n\n ---------- For Educational Purposes ONLY ---------- \n ---------- github.com/dimsour ----------")
 
-def getViews():
+def getViews():100000
     sleep(2)
     try:
         driver.find_element_by_xpath("/html/body/main/div/div/div[2]/div/div[1]/div[3]/div/div/button").click()
@@ -36,15 +36,15 @@ def getViews():
         print("Generic error occured. Trying again..")
         driver.refresh()
         sleep(30)
-        getViews()
+        getViews(100000)
 
 if __name__ == '__main__':
     main()
 
-videoURL = input("\nInsert Tiktok Video URL : ")
+videoURL = input("\nInsert Tiktok Video URL :https://www.tiktok.com/@clan.noxy/video/7089151835520388398?is_from_webapp=1&sender_device=pc&web_id=7063650661338351109 ")
 PATH = os.getcwd() + "/chromedriver.exe" 
 driver=webdriver.Chrome(PATH)
 driver.get("https://freer.es/")
 
-getViews()
+getViews(100000)
 
